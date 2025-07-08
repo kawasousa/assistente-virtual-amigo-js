@@ -1,0 +1,19 @@
+:root {
+    font-size: large;
+
+    --color-black: #1f1f1f;
+    --color-white: #FFFFFF;
+    --color-green: #A2FF79;
+    --color-light-green: #D4FFC2;
+    --color-orange: #FF9900;
+    --color-dark-gray: #333136;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark-gray);
+    border-radius: 2rem;
+}

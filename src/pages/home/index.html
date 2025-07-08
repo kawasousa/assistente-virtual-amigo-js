@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Assistente Mestre de Informação e Guia Online</title>
+</head>
+<body>
+    <div class="div-title">
+        <div class="div-chat-icon">
+            <img src="../../../assets/imgs/favicon.png">
+        </div>
+        <h1>AMIGO</h1>
+    </div>
+    <div class="div-chat-messages" id="div-chat-messages">
+    </div>
+    <form id="form-input-field" class="form-input-field">
+        <div class="div-attachment-icon" id="div-attachment-icon"></div>
+        <input type="text" id="input-text-field" placeholder="Faça uma pergunta...">
+        <div id="div-attachment-field" class="div-attachment-field">
+            <div class="div-input-attachment-file">
+                <label for="input-file-attachment">+ Imagem</label>
+                <input type="file" name="input-attachment-file" id="input-file-attachment" accept="image/*" multiple>
+            </div>
+            <label for="button-send-query">Enviar</label>
+            <button id="button-send-query" style="display: none;"></button>
+        </div>
+    </form>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
