@@ -1,3 +1,5 @@
+import faviconURL from '../../assets/imgs/favicon.png'
+
 export function get(id) {
     return document.getElementById(id);
 }
@@ -50,7 +52,7 @@ export function createResponseContainer(text) {
     const icon = createElement("img");
     const textField = createElement("p");
 
-    icon.src = "../../assets/imgs/favicon.png";
+    icon.src = faviconURL;
     textField.innerHTML = text;
 
     iconField.appendChild(icon);
@@ -65,7 +67,7 @@ export function addFavicon() {
     const head = document.head;
     const faviconLink = document.createElement('link');
     faviconLink.rel = 'icon';
-    faviconLink.href = '../../assets/imgs/favicon.png';
+    faviconLink.href = faviconURL;
     faviconLink.type = 'image/png'
 
     head.append(faviconLink);
