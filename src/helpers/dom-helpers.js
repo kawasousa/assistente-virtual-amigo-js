@@ -50,7 +50,7 @@ export function createResponseContainer(text) {
     const icon = createElement("img");
     const textField = createElement("p");
 
-    icon.src = "../../../assets/imgs/favicon.png";
+    icon.src = "../../assets/imgs/favicon.png";
     textField.innerHTML = text;
 
     iconField.appendChild(icon);
@@ -65,7 +65,7 @@ export function addFavicon() {
     const head = document.head;
     const faviconLink = document.createElement('link');
     faviconLink.rel = 'icon';
-    faviconLink.href = '../../../assets/imgs/favicon.png';
+    faviconLink.href = '../../assets/imgs/favicon.png';
     faviconLink.type = 'image/png'
 
     head.append(faviconLink);
